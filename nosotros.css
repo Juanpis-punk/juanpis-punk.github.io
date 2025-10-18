@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+
+body{
+    margin: 0;
+    
+}
+
+header{
+display: grid;
+grid-template-columns: 13.5% 73% 13.5%;
+position: fixed;
+width: 100%;
+height: 85px;
+background-color: aliceblue;
+border-radius: 0 0 10px 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+z-index: 100;
+
+
+}
+
+header .titulo-header{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+color:rgb(0, 0, 0);
+width: 100%;
+}
+
+header .titulo-header a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+
+header #nav{
+    display: flex;
+    justify-content: center;
+}
+
+header #nav .links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+
+header #nav .links a{  
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color:rgb(0, 0, 0)
+    
+}
+
+header #nav .links a:hover{  
+    color: rgb(0, 153, 255);
+    transition: 0.3s;
+    
+}
+header .redes{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    font-size: 30px;
+    padding-right: 45px;
+}
+
+#inicio{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(134, 36, 255) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+        
+}
+
+
+
+
+#content{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    grid-template-columns: 35% 65%;
+    margin-bottom: 20px;
+    
+}   
+
+
+#content .text1{
+    padding: 75px 40px 40px 0px;
+    align-items: top;
+    justify-content: center ;
+    text-align: justify;
+}
+
+#content .text1 h1{
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(134, 36, 255);
+}
+
+#content .text1 p{
+    height: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 570;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-top: 0;
+}
+
+#content .image1{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+#content .image1 img{
+    height: auto;   
+    width: 400px;
+    border-radius: 20px;
+    
+}
+
+#content .about-us{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 153, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}   
+
+#content .about-us:hover{
+    background-color: rgb(183, 188, 37);
+    transition: 0.3s;
+}
+/*=======================================================*/
+
+#content2{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 0 100px;
+}
+
+#content2 .text2{
+    padding: 0 50px;
+    text-align: center;
+}
+
+#content2 .text2 h1{
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(134, 36, 255);
+}
+#content2 .text2 p{
+    
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 570;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+#content2 .text2 ul{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 570;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    
+}
+
+#content2 .text2 ul strong{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.1em;
+    
+}
+
+/*=======================================================*/
+
+#content3{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(134, 36, 255);
+    display: grid;
+    grid-template-rows: repeat(2, 1f);
+    ;
+}
+
+#content3 h1{
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    margin: 0;
+    padding: 50px 0 0 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#content3 .integrantes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 50px 100px;
+}
+
+#content3 .integrantes .int{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    
+}
+
+#content3 .integrantes img{
+width: 200px;
+height: auto;
+border-radius: 20px;
+}
+
+#content3 .integrantes .int .info {
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    }
+
+#content3 .integrantes .int .info h1{
+    font-family: "BBH Sans Hegarty", sans-serif;
+    height: fit-content;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: rgb(255, 255, 255);}
+
+    #content3 .integrantes .int p{
+    font-family: 'Montserrat', sans-serif;
+    height: fit-content;
+    font-size: 1.3em;
+    font-weight: 1000;
+    margin: 0;
+}
+
+
+
+
+
+
+/*=======================================================*/
+
+footer{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    padding-top: 30px;
+    
+
+}
+
+footer .footer-content{
+display: grid;
+grid-template-rows: repeat(3, 25%);
+
+}
+
+footer .footer-content .titulo-footer{
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+}
+
+footer .footer-content .titulo-footer h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+footer .footer-content .parrafito{
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+}
+
+footer .footer-content .parrafito p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+footer .ulfoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .footer-content .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    list-style: none;
+    
+}
+
+footer .footer-content .socials li a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+
+
+
