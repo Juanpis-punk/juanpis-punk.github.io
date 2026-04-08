@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #0b1522;
+    flex-direction: column;
+    gap:6em;
+    
+}
+
+body .un {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.heart {
+    width: 175px;
+    height: 175px;
+    background-color: hsl(343, 100%, 51%);
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: 10px 10px 90px rgb(255, 81, 81);
+    animation:  heart 1s ease-in-out infinite;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color:white;
+    
+}
+
+@keyframes heart{
+
+    0%{
+        transform: rotate(-45deg) scale(1);
+    }
+    50%{
+        transform: rotate(-45deg) scale(1.04);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1);
+    }
+
+
+}
+
+
+.heart p{
+    position: absolute;
+    z-index: 999;
+    width: 110%;
+    transform: rotate(45deg) translate(0, -35px);
+}
+
+.heart::before{
+
+    content: "";
+    width: 175px;
+    height: 175px;
+    background-color: hsl(343, 100%, 51%);
+    position: absolute;
+    border-radius: 50%;
+    top: -50%;
+    box-shadow: -10px 10px 90px rgb(255, 81, 81);
+}
+
+.heart::after{
+
+    content: "";
+    width: 175px;
+    height: 175px;
+    background-color: hsl(343, 100%, 51%);
+    position: absolute;
+    border-radius: 50%;
+    right: -50%;
+    box-shadow: 10px -10px 90px rgb(255, 81, 81);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #0b1522;
+
+}
+
+}
